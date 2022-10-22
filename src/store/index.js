@@ -1,6 +1,4 @@
-// import redux from 'redux';
-
-const redux = require('redux');
+import { createStore } from 'redux';
 
 const initialState = { counter: 0, showCounter: true };
 
@@ -23,6 +21,6 @@ const counterReducer = (state = initialState, action) => {
   return state;
 };
 
-const store = redux.createStore(counterReducer);
+const store = createStore(counterReducer);
 
 export default store;
